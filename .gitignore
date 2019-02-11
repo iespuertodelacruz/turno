@@ -1,0 +1,4 @@
+*.pyc
+config.js
+.DS_Store
+last_number.dat

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coja su turno!</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <link rel="stylesheet" href="custom.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="title is-1 has-text-centered">Control del turno</h1>
+
+    <div class="columns is-centered">
+      <div class="column is-2">
+        <form>
+          <div class="field">
+            <label class="label"><i class="fas fa-hashtag"></i> Turno</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Hello" id="turn">
+            </div>
+          </div>
+
+          <button id="set-turn" class="button is-link">Set</button>
+          <button id="inc-turn" class="button is-primary is-outlined"><i class="fas fa-plus"></i></button>
+          <button id="dec-turn" class="button is-danger is-outlined"><i class="fas fa-minus"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../config.js"></script>
+  <script src="config.js"></script>
+  <script src="custom.js"></script>
+</body>
+</html>
