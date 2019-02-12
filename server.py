@@ -24,7 +24,7 @@ def message_received(client, server, message):
 
 ws_config = get_ws_config('config.js')
 database = DB('last_number.dat')
-server = WebsocketServer(int(ws_config['wsPort']))
+server = WebsocketServer(int(ws_config['wsPort']), '0.0.0.0')
 server.set_fn_new_client(new_client)
 server.set_fn_client_left(client_left)
 server.set_fn_message_received(message_received)
